@@ -7,6 +7,7 @@ module.exports = function(dbname, fn){
 
   MongoClient.connect(connection, function(err, db) {
     if(err){throw err;}
+    global.nss = {};
     global.nss.db = db;
     global.nss.Priority = require('../models/priority');
     console.log('Connected to MongoDB; Models Loaded');

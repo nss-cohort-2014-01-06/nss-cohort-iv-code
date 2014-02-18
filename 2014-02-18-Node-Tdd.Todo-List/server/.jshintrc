@@ -20,6 +20,6 @@
   "browser": true,
   "jquery": true,
   "validthis": true,
-  "globals": {"_":false, "describe":false, "it":false}
+  "globals": {"_":false, "describe":false, "it":false, "before":false}
 }
 
