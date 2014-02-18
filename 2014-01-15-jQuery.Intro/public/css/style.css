@@ -1,0 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Mr+De+Haviland);
+
+p{
+  font-size: 15px;
+}
+
+.cp{
+  font-family: 'Mr De Haviland', cursive;
+}
+
+.alert{
+  background-color: red;
+}
+
+
+.success{
+  background-color: green;
+}
+

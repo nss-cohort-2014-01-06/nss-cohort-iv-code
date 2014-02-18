@@ -1,0 +1,21 @@
+body {
+  background-color: #cccccc;
+  padding: 25px;
+}
+input {
+  border: 1px dashed blue;
+}
+button {
+  margin-left: 20px;
+}
+#container div {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 20px;
+  border: 2px solid #ff00ff;
+  background-size: cover;
+}
+#container div:nth-child(2n) {
+  border: 2px solid #00ff00;
+}

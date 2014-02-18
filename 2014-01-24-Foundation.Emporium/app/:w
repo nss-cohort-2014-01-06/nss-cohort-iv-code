@@ -1,0 +1,23 @@
+(function(){
+
+  'use strict';
+
+  $(document).ready(init);
+
+  function init(){
+    $('#add-item').click(addItem);
+  }
+
+  function addItem(){
+    var item = $('#item').val();
+    var quantity = $('#quantity').val();
+    var amount = $('#amount').val();
+    var total = quantity * amount;
+    addItemToTable(item, quantity, amount, total);
+  }
+
+  function addItemToTable(item, quantity, amount, total){
+  }
+
+})();
+

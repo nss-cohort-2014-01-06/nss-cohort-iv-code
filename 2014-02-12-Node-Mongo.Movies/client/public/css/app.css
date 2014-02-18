@@ -1,0 +1,52 @@
+@import url(http://fonts.googleapis.com/css?family=Unlock);
+body {
+  background-color: #ffffff;
+}
+.hide {
+  display: none;
+}
+.poster {
+  position: relative;
+  background-size: cover;
+  width: 270px;
+  height: 400px;
+  float: left;
+  margin: 0px 25px 25px 0px;
+  box-shadow: 3px 3px 12px #000000;
+}
+.title {
+  font-family: 'Unlock', cursive;
+  font-size: 30px;
+  color: black;
+  padding: 5px;
+  background-color: white;
+  opacity: 0.7;
+}
+.description {
+  margin-top: 10px;
+  font-family: monospace;
+  font-size: 9px;
+  color: black;
+  padding: 5px;
+  background-color: white;
+  opacity: 0.7;
+}
+.studio {
+  color: red;
+  font-size: 14px;
+}
+.actors {
+  color: red;
+  font-size: 14px;
+}
+.footer {
+  position: absolute;
+  bottom: 0px;
+  padding: 5px;
+  font-family: monospace;
+  font-size: 9px;
+  color: black;
+  background-color: white;
+  opacity: 0.7;
+  width: 100%;
+}

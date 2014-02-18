@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/css?family=Combo);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+.number{
+  font-family: 'Combo', cursive;
+  font-size: 25px;
+}
+
+.operator, #push, #clear, #answer, #sign, #queue{
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 25px;
+}
+
+#answer{
+  border: 3px double #339900;
+  background-color: #ccff99;
+  text-align: right;
+  padding: 25px;
+}
+
+#queue{
+  border: 1px solid #252525;
+  background-color: #cccccc;
+  color: #555555;
+  height: 150px;
+  overflow: auto;
+}
+
+.key{
+  border: 1px dashed blue;
+  background-color: #99ccff;
+  text-align: center;
+  padding: 10px;
+  width: 100px;
+}
+
+.operator{
+  border: 1px dashed #cc0000;
+  background-color: #ff99cc;
+}
+
+#clear{
+  border: 1px dashed #339900;
+  background-color: #ccff99;
+}
+
+#sign, #push{
+  border: 1px dashed #330033;
+  background-color: #cc9999;
+}
+

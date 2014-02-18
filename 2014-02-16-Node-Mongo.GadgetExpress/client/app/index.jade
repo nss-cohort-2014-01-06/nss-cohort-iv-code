@@ -1,0 +1,74 @@
+doctype html
+//[if IE 9]><html class="lt-ie10" lang="en" > <![endif]
+html(class='no-js', lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title GadgetExpress
+    link(rel='stylesheet', href='/css/normalize.css')
+    link(rel='stylesheet', href='/css/foundation.css')
+    link(rel='stylesheet', href='/css/app.css')
+    script(src='/js/vendor/modernizr.js')
+  body
+    .row
+      .small-12.columns
+        h1 GadgetExpress
+    .row
+      .small-4.columns
+        form#user
+          fieldset
+            legend User Creation
+            .row
+              .small-12.columns
+                label Name
+                input(type='text', name='name')
+            .row
+              .small-12.columns
+                label Deposit
+                input(type='text', name='balance')
+            .row
+              .small-12.columns
+                button.radius.small Create User
+      .small-8.columns
+        form#gadget
+          fieldset
+            legend Gadget Creation
+            .row
+              .small-12.columns
+                label Name
+                input(type='text', name='name')
+            .row
+              .small-12.columns
+                label Price
+                input(type='text', name='price')
+            .row
+              .small-12.columns
+                label Amount
+                input(type='text', name='amount')
+            .row
+              .small-12.columns
+                button.radius.small Create Gadget
+    .row
+      .small-4.columns
+        table#users
+          thead
+            tr
+              th Name
+              th Balance
+              th Purchases
+          tbody
+      .small-8.columns
+        table#gadgets
+          thead
+            tr
+              th Name
+              th Price
+              th Amount
+              th ---
+          tbody
+
+    script(src='/js/vendor/jquery.js')
+    script(src='/js/vendor/foundation.js')
+    script(src='/js/vendor/lodash.js')
+    script(src='/js/source/main.js')
+

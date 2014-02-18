@@ -1,0 +1,15 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Mad Libs
+    link(rel='stylesheet', href='/css/normalize.css')
+    link(rel='stylesheet', href='/css/style.css')
+    script(src='/js/vendor/jq.js')
+    script(src='/js/source/main.js')
+  body
+    input#words(type='text', autofocus=true, placeholder='enter a sentence')
+    button#add-libs Make Mad-Libs
+    #mad-libs
+    #sentence
+

@@ -1,0 +1,16 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Satellite Imagery
+    link(rel='stylesheet', href='/css/normalize.css')
+    link(rel='stylesheet', href='/css/style.css')
+    script(src='/js/vendor/jq.js')
+    script(src='/js/source/main.js')
+  body
+    input#zip(type='text', autofocus=true, placeholder='37206')
+    button#get-imagery Get Satellite Imagery
+    #container
+      - for(var i = 0; i < 3; i++)
+        img
+

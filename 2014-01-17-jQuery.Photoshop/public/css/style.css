@@ -1,0 +1,39 @@
+body{
+  padding: 10px;
+}
+
+.color{
+  width: 50px;
+  height: 50px;
+  border: 1px dashed black;
+  margin: 5px;
+  float: left;
+}
+
+.selected{
+  border: 1px solid red;
+}
+
+.clear{
+  clear: both;
+}
+
+#colors{
+  border: 1px dashed #757575;
+  background-color: #cccccc;
+  margin: 20px 0px 20px 0px;
+}
+
+#pixels{
+  border: 1px dashed #757575;
+  background-color: #cccccc;
+  margin: 20px 0px 20px 0px;
+}
+
+.pixel{
+  width: 5px;
+  height: 5px;
+  border-bottom: 1px dashed black;
+  float: left;
+}
+

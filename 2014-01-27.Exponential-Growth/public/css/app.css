@@ -1,0 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Emblema+One);
+li {
+  border: 1px dashed #cccccc;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-family: 'Emblema One', cursive;
+}
+li span:nth-child(2) {
+  position: relative;
+  bottom: 10px;
+  font-size: 8px;
+}
+li span:nth-child(3) {
+  padding: 0px 10px;
+  color: red;
+}

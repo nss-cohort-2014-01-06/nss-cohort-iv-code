@@ -1,0 +1,18 @@
+body {
+  background-color: #ffffff;
+}
+#description {
+  height: 150px;
+}
+.photo {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+}
+#photos a,
+#animals a {
+  margin: 7px;
+}
+#animals {
+  width: 100%;
+}

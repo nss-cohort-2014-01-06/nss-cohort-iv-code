@@ -1,0 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Mystery+Quest);
+.weather {
+  float: left;
+  width: 200px;
+  border: 1px dashed black;
+  margin: 20px;
+  padding: 10px;
+  font-family: 'Mystery Quest', cursive;
+  background-color: #ff00ff;
+}

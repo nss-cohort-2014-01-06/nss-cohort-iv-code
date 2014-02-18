@@ -1,0 +1,7 @@
+.box {
+  border: 2px dashed #ff00ff;
+  float: left;
+  margin: 10px;
+  color: #ff00ff;
+  background-color: #ff80ff;
+}
