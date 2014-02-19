@@ -13,15 +13,21 @@ function Priority(priority){
 Priority.prototype.save = function(fn){
   var self = this;
 
-  Priority.findByName(this.name, function(priority){
-    if(!priority){
-      priorities.save(self, function(err, record){
-        fn(err);
-      });
-    }else{
-      fn(new Error('Duplicate Priority'));
-    }
-  });
+  if(self._id){
+    priorities.save(self, function(err, record){
+      fn(err);
+    });
+  }else{
+    Priority.findByName(self.name, function(priority){
+      if(!priority){
+        priorities.save(self, function(err, record){
+          fn(err);
+        });
+      }else{
+        fn(new Error('Duplicate Priority'));
+      }
+    });
+  }
 };
 
 Priority.findAll = function(fn){

@@ -20,7 +20,7 @@ describe('Priority', function(){
       done();
     });
   });
-
+  // ------------------------------------------------------------------------ //
   describe('new', function(){
     it('should create a new Priority', function(){
       var obj = {name:'High', value: '10'};
@@ -31,7 +31,7 @@ describe('Priority', function(){
       expect(p1).to.have.property('value').and.deep.equal(10);
     });
   });
-
+  // ------------------------------------------------------------------------ //
   describe('#save', function(){
     it('should save a Priority object into the database', function(done){
       var obj = {name:'High', value: '10'};
@@ -61,8 +61,25 @@ describe('Priority', function(){
         });
       });
     });
-  });
 
+    it('should update an existing priority', function(done){
+      var p1 = new Priority({name:'High', value:'19'});
+
+      p1.save(function(){
+        p1.name = 'High';
+        p1.value = 10;
+        var oldId = p1._id.toString();
+        p1.save(function(){
+          Priority.findById(oldId, function(priority){
+            expect(priority.name).to.equal('High');
+            expect(priority.value).to.deep.equal(10);
+            done();
+          });
+        });
+      });
+    });
+  });
+  // ------------------------------------------------------------------------ //
   describe('.findAll', function(){
     it('should return all Priorities in the datbase', function(done){
       var p1 = new Priority({name:'High', value:'10'});
@@ -81,7 +98,7 @@ describe('Priority', function(){
       });
     });
   });
-
+  // ------------------------------------------------------------------------ //
   describe('.findByName', function(){
     it('should find the Priority by its name', function(done){
       var p1 = new Priority({name:'High', value:'10'});
@@ -108,7 +125,7 @@ describe('Priority', function(){
       });
     });
   });
-
+  // ------------------------------------------------------------------------ //
   describe('.findById', function(){
     it('should find the Priority by its id', function(done){
       var p1 = new Priority({name:'High', value:'10'});
@@ -136,6 +153,6 @@ describe('Priority', function(){
       });
     });
   });
-
+  // ------------------------------------------------------------------------ //
 });
 
