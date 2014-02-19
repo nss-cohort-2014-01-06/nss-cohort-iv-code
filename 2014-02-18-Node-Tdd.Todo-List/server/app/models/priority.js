@@ -30,6 +30,13 @@ Priority.prototype.save = function(fn){
   }
 };
 
+Priority.deleteById = function(id, fn){
+  var _id = Mongo.ObjectID(id);
+  priorities.remove({_id:_id}, function(err, count){
+    fn(count);
+  });
+};
+
 Priority.findAll = function(fn){
   priorities.find().toArray(function(err, records){
     fn(records);

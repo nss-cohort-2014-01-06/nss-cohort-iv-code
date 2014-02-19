@@ -154,5 +154,28 @@ describe('Priority', function(){
     });
   });
   // ------------------------------------------------------------------------ //
+  describe('.deleteById', function(){
+    it('should delete the priority by its id from the datbase', function(done){
+      var p1 = new Priority({name:'High', value:'10'});
+      var p2 = new Priority({name:'Medium', value:'5'});
+      var p3 = new Priority({name:'Low', value:'1'});
+
+      p1.save(function(){
+        p2.save(function(){
+          var id = p2._id.toString();
+          p3.save(function(){
+            Priority.deleteById(id, function(numberRemoved){
+              Priority.findById(id, function(foundPriority){
+                expect(numberRemoved).to.equal(1);
+                expect(foundPriority).to.be.null;
+                done();
+              });
+            });
+          });
+        });
+      });
+    });
+  });
+  // ------------------------------------------------------------------------ //
 });
 
