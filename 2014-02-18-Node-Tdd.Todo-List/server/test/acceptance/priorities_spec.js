@@ -11,9 +11,10 @@ var Priority;
 describe('priorities', function(){
 
   before(function(done){
-    var connect = require('../../app/lib/mongodb-connection-pool');
-    connect('todo-test', function(){
-      Priority = global.nss.Priority;
+    request(app)
+    .get('/')
+    .end(function(err, res){
+      Priority = require('../../app/models/priority');
       done();
     });
   });

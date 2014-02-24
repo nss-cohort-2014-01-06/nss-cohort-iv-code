@@ -2,15 +2,16 @@
 
 'use strict';
 
+process.env.DBNAME = 'todo-test';
 var expect = require('chai').expect;
 var Priority;
 
 describe('Priority', function(){
 
   before(function(done){
-    var connect = require('../../app/lib/mongodb-connection-pool');
-    connect('todo-test', function(){
-      Priority = global.nss.Priority;
+    var initMongo = require('../../app/lib/init-mongo');
+    initMongo.db(function(){
+      Priority = require('../../app/models/priority');
       done();
     });
   });
