@@ -14,8 +14,18 @@ html(class='no-js', lang='en')
     .row
       .small-12.columns
         h1=title
+    .row
+      .small-6.columns
+        #clock
+      .small-6.columns
+        button#match.small.radius Match!
+    .row
+      .small-6.columns
+        each n in names
+          .name= n.country
+      .small-6.columns
         each f in flags
-          p.flag(class='flag-' + f.flag)= f.country
+          .icon: .flag(class='flag-' + f.code)
 
     script(src='/js/vendor/jquery.js')
     script(src='/js/vendor/foundation.js')

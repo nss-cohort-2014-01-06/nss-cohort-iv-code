@@ -1,13 +1,28 @@
 'use strict';
 
 /* answers */
-var f1 = {country: 'USA', flag:'us'};
-var f2 = {country: 'Canada', flag:'ca'};
-var f3 = {country: 'Russia', flag:'ru'};
-var f4 = {country: 'Italy', flag:'it'};
-var f5 = {country: 'France', flag:'fr'};
+var f1 = {country: 'USA', code:'us'};
+var f2 = {country: 'Canada', code:'ca'};
+var f3 = {country: 'Russia', code:'ru'};
+var f4 = {country: 'Italy', code:'it'};
+var f5 = {country: 'France', code:'fr'};
+var f6 = {country: 'Afghanistan', code:'af'};
+var f7 = {country: 'Japan', code:'jp'};
+var f8 = {country: 'Syria', code:'sy'};
+var f9 = {country: 'China', code:'cn'};
+var f10 = {country: 'North Korea', code:'kp'};
+var f11 = {country: 'Taiwan', code:'tw'};
+var f12 = {country: 'Finland', code:'fi'};
+var f13 = {country: 'Turkey', code:'tr'};
+var f14 = {country: 'Argentina', code:'ar'};
+var f15 = {country: 'Mexico', code:'mx'};
+var f16 = {country: 'Peru', code:'pe'};
+var f17 = {country: 'Australia', code:'au'};
+var f18 = {country: 'Austria', code:'at'};
+var f19 = {country: 'Bahamas', code:'bs'};
+var f20 = {country: 'United Kingdom', code:'gb'};
 
-global.flags = [f1, f2, f3, f4, f5];
+global.flags = [f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11, f12, f13, f14, f15, f16, f17, f18, f19, f20];
 /* end answers */
 
 var dbname = process.env.DBNAME;
